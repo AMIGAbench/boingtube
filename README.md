@@ -96,21 +96,9 @@ docker compose up -d
 
 ---
 
-## Disabling YouTube Support
-
-To disable YouTube support again, set:
-
-```yaml
-ENABLE_YTDLP_FETCHER: NO
-```
-
-and restart the container.
-
----
-
 ## Disclaimer
 
-These files are provided as part of an **open-source hobby project**.
+These files are provided as part of an **Amiga hobby project**.
 
 They do not host, store, or redistribute video content.
 All content access is initiated by the user and handled by external tools.
