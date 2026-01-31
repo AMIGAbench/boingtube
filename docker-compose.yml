@@ -2,9 +2,6 @@ name: btserver
 
 services:
   btserver:
-    build:
-      context: .
-      dockerfile: Dockerfile
     image: cego1200/btserver:latest
     container_name: btserver
     restart: unless-stopped
