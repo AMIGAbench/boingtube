@@ -1,14 +1,3 @@
-# boingtube
-
-Alles klar 👍
-Dann hier ein **kompaktes, fokussiertes README**, **nur** für die beiden Dateien
-`docker-compose.yml` und `setup_boingtube.sh`.
-Ohne Marketing, ohne Architektur-Blabla – **rein funktional und sauber**.
-
-Du kannst das **1:1 als `README.md`** neben die beiden Dateien legen.
-
----
-
 # BoingTube – Docker Setup Files
 
 This repository provides the **Docker configuration files** required to run the BoingTube server.
