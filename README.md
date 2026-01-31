@@ -36,7 +36,7 @@ Change this value to `YES` to activate YouTube support.
 
 ### `setup_boingtube.sh`
 
-Interactive setup helper script.
+If you're not familiar with downloading and editing the file in an editor you can also use this interactive setup helper script.
 
 This script:
 
