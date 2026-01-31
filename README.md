@@ -22,7 +22,7 @@ Key characteristics:
 * Starts the BoingTube backend container
 * Runs in a **neutral base mode** by default
 * Does **not** include or use `yt-dlp` automatically
-* Can optionally enable YouTube support via an environment variable
+* Must be enabled for YouTube support via an environment variable
 
 The relevant setting is:
 
@@ -30,7 +30,7 @@ The relevant setting is:
 ENABLE_YTDLP_FETCHER: NO
 ```
 
-Changing this value to `YES` enables optional YouTube support.
+Change this value to `YES` to activate YouTube support.
 
 ---
 
@@ -40,13 +40,10 @@ Interactive setup helper script.
 
 This script:
 
-* downloads the official `docker-compose.yml` from the BoingTube repository
-* explains what optional YouTube support means
-* asks for **explicit user consent** (YES / NO)
-* enables YouTube support **only after confirmation**
+* downloads the official `docker-compose.yml` from this repository
+* asks for explicit user consent (YES / NO)
+* enables YouTube support after confirmation
 * optionally starts the container
-
-Nothing is enabled automatically.
 
 ---
 
@@ -118,15 +115,5 @@ These files are provided as part of an **open-source hobby project**.
 They do not host, store, or redistribute video content.
 All content access is initiated by the user and handled by external tools.
 
-This project is **not affiliated with YouTube or Google**.
-
----
-
-Wenn du willst, kann ich dir noch:
-
-* eine **ultraknappe README-Version** (10–15 Zeilen)
-* oder eine **Kommentar-Version direkt für die `docker-compose.yml`**
-* oder eine **Kurzbeschreibung für GitHub Releases**
-
-erstellen.
+This project is **not affiliated with YouTube or Google LLC**.
 
