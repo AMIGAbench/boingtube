@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: btserver:latest
+    image: cego1200/btserver:latest
     container_name: btserver
     restart: unless-stopped
     environment:
