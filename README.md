@@ -74,7 +74,7 @@ Follow the on-screen instructions.
 
 ---
 
-### Option 2: Manual configuration
+### Option 2: Manual configuration (docker compose)
 
 Edit `docker-compose.yml`:
 
@@ -96,6 +96,41 @@ docker compose up -d
 
 ---
 
+### Option 3: Manual configuration (docker run)
+
+
+Starting the server (docker run / without docker compose)
+
+```bash
+docker run -d \
+    --name btserver \
+    --restart unless-stopped \
+    -e ENABLE_YTDLP_FETCHER=YES \
+    -p 38080:38080 \
+    -p 38082:38082 \
+    -p 38083:38083 \
+    -p 5003:5003 \
+    -v bt_runs:/data/runs \
+    -v bt_thumb_cache:/data/thumb_cache \
+    -v bt_ytdlp_cache:/data/ytdlp_cache \
+    -v bt_ytdlp_bin:/opt/yt-dlp \
+    cego1200/btserver:latest
+```
+
+Stopping the server (docker stop)
+```bash
+docker stop btserver
+```
+Restarting the server (docker start)
+```bash
+docker start btserver
+```
+Removing the server (docker rm)
+```bash
+docker rm btserver
+```
+
+---
 ## Disclaimer
 
 These files are provided as part of an **Amiga hobby project**.
